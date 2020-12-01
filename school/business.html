@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>codePro.inc</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mine.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        const hum =$('#humburger')
+        const nav =$('.sp_nav')
+        hum.on('click',function(){
+          nav.toggleClass('toggle');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="./top.html">codePro.inc</a>
+      </h1>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="./top.html">ホーム</a></li>
+          <li><a href="./philosophy.html">企業理念</a></li>
+          <li><a href="./business.html">事業概要</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <nav class="sp_nav">
+        <ul>
+          <li><a href="./top.html">ホーム</a></li>
+          <li><a href="./philosophy.html">企業理念</a></li>
+          <li><a href="./business.html">事業概要</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+          <li class="close"><a href="">閉じる</a></li>
+        </ul>
+      </nav>
+      <div id="humburger">
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <section class="image_section">
+        <img class="image" src="./images/image01.jpg">
+        <p class="text">
+          事業概要
+        </p>
+      </section>
+      <section class="detal_section">
+        <div class="box"> 
+          <div class="business_wrapper">
+            <h2>BUSINESS</h2>
+            <div class="business">
+              <div class="business_box">
+                <img src="./images/image02.jpg">
+                <h4>プログラミングスクールの運営</h4>
+                <div class="line"></div>
+                <p>オンライン型のプログラミングスクール、codeProの運営をしています。</p>
+              </div>
+              <div class="business_box">
+                <img src="./images/image03.jpg">
+                <h4>宇宙ゴミの回収事業</h4>
+                <div class="line"></div>
+                <p>オービタル周辺の衛星やロケットゴミを回収する事業を運営しています。</p>
+              </div>
+              <div class="business_box">
+                <img src="./images/image04.jpg">
+                <h4>コワーキングスペースの運営</h4>
+                <div class="line"></div>
+                <p>人が誰でもサブオフィスとして利用できるコワーキングスペースの運営をしています。</p>
+              </div>
+           </div>
+          </div>
+        </div> 
+      </section>
+    </main>
+    <footer>
+      <p>codePro.inc</p>
+    </footer>
+  </body>
+</html>
